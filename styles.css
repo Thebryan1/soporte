@@ -68,16 +68,16 @@ section h2 {
 /* Estilo base para los botones */
 .button {
     display: block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 5px 10px;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
     border: 2px solid transparent; /* Borde transparente */
     border-radius: 5px;
     transition: border-color 0.3s ease; /* Transición del color del borde */
-    width: 200px; /* Ancho de los botones */
-    height: 50px; /* Alto de los botones */
-    margin: 10px; /* Margen entre los botones */
+    width: 120px; /* Ancho de los botones */
+    height: 40px; /* Alto de los botones */
+    margin: 5px; /* Margen entre los botones */
 }
 
 /* Estilo para el contenedor de los botones */
