@@ -66,10 +66,11 @@ section h2 {
     max-width: 200px;
 }
 /* Estilo base para los botones */
+/* Estilo base para los botones */
 .button {
     display: block;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 5px 10px; /* Ajusta el padding si es necesario */
+    font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
     text-align: center;
     text-decoration: none;
     border: 2px solid transparent; /* Borde transparente */
@@ -79,6 +80,7 @@ section h2 {
     height: 40px; /* Alto de los botones */
     margin: 5px; /* Margen entre los botones */
 }
+
 
 /* Estilo para el contenedor de los botones */
 .button-container {
