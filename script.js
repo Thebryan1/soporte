@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function verificarHorario() {
         var horaActual = new Date().getHours();
         // Establecer el horario de atención (ejemplo: de 9:00 a 20:00)
-        if (horaActual < 9 || horaActual >= 20) {
+        if (horaActual < 8 || horaActual >= 17) {
             // Deshabilitar los enlaces para llamar y enviar mensajes de WhatsApp
             document.getElementById("llamar1").removeAttribute("href");
             document.getElementById("llamar2").removeAttribute("href");
