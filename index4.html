@@ -19,39 +19,103 @@
     </header>
     
     <main>
-        <section id="link3">
+        <section id="link1">
             <h2>Soporte Tecnico</h2>
             <p>Selecciona una opción del menú de navegación para ver la información correspondiente.</p>
         </section>
-        <section id="qr">
+        <section id="qr6" class="header">
             <h2>El gran Rodo</h2>
+            <p>Contacto: <a id="llamar6" href="tel:+51974358234">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp6" href="https://wa.me/974358234">Mensaje</a></p>
+            <p id="horario6"></p>
             <img src="rodo.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        
+        <section id="qr7" class="header">
             <h2>El gran Gianfranco</h2>
+            <p>Contacto: <a id="llamar7" href="tel:+51955579770">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp7" href="https://wa.me/955579770">Mensaje</a></p>
+            <p id="horario7"></p>
             <img src="gian.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        
+        <section id="qr8" class="header">
             <h2>El gran Franklin</h2>
+            <p>Contacto: <a id="llamar8" href="tel:+51992257853">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp8" href="https://wa.me/992257853">Mensaje</a></p>
+            <p id="horario8"></p>
             <img src="fran.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        
+        <section id="qr9" class="header">
             <h2>El gran Bryan</h2>
+            <p>Contacto: <a id="llamar9" href="tel:+51900482934">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp9" href="https://wa.me/900482934">Mensaje</a></p>
+            <p id="horario9"></p>
             <img src="bry.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        
+        <section id="qr10" class="header">
             <h2>El gran Sandy</h2>
+            <p>Contacto: <a id="llamar10" href="tel:+51993058595">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp10" href="https://wa.me/993058595">Mensaje</a></p>
+            <p id="horario10"></p>
             <img src="san.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        
+        <section id="qr11" class="header">
             <h2>El gran Abraham</h2>
+            <p>Contacto: <a id="llamar11" href="tel:+51974286679">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp11" href="https://wa.me/974286679">Mensaje</a></p>
+            <p id="horario11"></p>
             <img src="abra.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        
+        <section id="qr12" class="header">
             <h2>El gran Sandro</h2>
+            <p>Contacto: <a id="llamar12" href="tel:+51930112752">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp12" href="https://wa.me/930112752">Mensaje</a></p>
+            <p id="horario12"></p>
             <img src="sandro.jpg" alt="Código QR">
         </section>
     </main>
     <script src="script.js"></script> <!-- Importa el script de JavaScript -->
+    <script>
+        
+            // Verificar si el horario está habilitado y deshabilitar los enlaces si es necesario
+            function verificarHorario() {
+                var horaActual = new Date().getHours();
+                // Establecer el horario de atención (ejemplo: de 9:00 a 20:00)
+                if (horaActual < 9 || horaActual >= 20) {
+                    // Deshabilitar los enlaces para llamar y enviar mensajes de WhatsApp
+                    document.getElementById("llamar6").removeAttribute("href");
+                    document.getElementById("whatsapp6").removeAttribute("href");
+                    document.getElementById("llamar7").removeAttribute("href");
+                    document.getElementById("whatsapp7").removeAttribute("href");
+                    document.getElementById("llamar8").removeAttribute("href");
+                    document.getElementById("whatsapp8").removeAttribute("href");
+                    document.getElementById("llamar9").removeAttribute("href");
+                    document.getElementById("whatsapp9").removeAttribute("href");
+                    document.getElementById("llamar10").removeAttribute("href");
+                    document.getElementById("whatsapp10").removeAttribute("href");
+                    document.getElementById("llamar11").removeAttribute("href");
+                    document.getElementById("whatsapp11").removeAttribute("href");
+                    document.getElementById("llamar12").removeAttribute("href");
+                    document.getElementById("whatsapp12").removeAttribute("href");
+                    // Mostrar un mensaje de horario fuera de servicio
+                    document.getElementById("horario6").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario7").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario8").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario9").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario10").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario11").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario12").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                }
+            }
+        
+            // Llamar a la función para verificar el horario al cargar la página
+            verificarHorario();
+        
+        </script>
 </body>
 </html>

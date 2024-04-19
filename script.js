@@ -1,20 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var header = document.querySelector(".header");
+    var headers = document.querySelectorAll(".header");
     var images = ["sopt.jpg", "2.jpg", "3.jpg"]; // Lista de imágenes disponibles
-    var currentIndex = 0;
 
     // Función para cambiar el fondo del encabezado al siguiente imagen del carrusel
-    function nextBackground() {
-        currentIndex = (currentIndex + 1) % images.length;
-        header.style.transition = "background-image 1s ease-in-out"; // Añade una transición suave al cambio de imagen
+    function nextBackground(header) {
+        var currentIndex = Math.floor(Math.random() * images.length);
         header.style.backgroundImage = "url('" + images[currentIndex] + "')";
     }
 
-    // Selecciona una imagen aleatoria y la establece como fondo del encabezado al cargar la página
-    currentIndex = Math.floor(Math.random() * images.length);
-    header.style.backgroundImage = "url('" + images[currentIndex] + "')";
+    // Cambiar el fondo del encabezado de cada sección cada 5 segundos
+    headers.forEach(function(header) {
+        setInterval(function() {
+            nextBackground(header);
+        }, 5000); // Cambia la imagen cada 5 segundos
+    });
 
-    // Llama a la función nextBackground cada 5 segundos para avanzar al siguiente fondo del carrusel
-    setInterval(nextBackground, 5000); // Cambia la imagen cada 5 segundos
+    // Verificar si el horario está habilitado y deshabilitar los enlaces si es necesario
+    function verificarHorario() {
+        var horaActual = new Date().getHours();
+        // Establecer el horario de atención (ejemplo: de 9:00 a 20:00)
+        if (horaActual < 9 || horaActual >= 20) {
+            // Deshabilitar los enlaces para llamar y enviar mensajes de WhatsApp
+            document.getElementById("llamar1").removeAttribute("href");
+            document.getElementById("llamar2").removeAttribute("href");
+            document.getElementById("whatsapp1").removeAttribute("href");
+            document.getElementById("whatsapp2").removeAttribute("href");
+           
+            // Mostrar un mensaje de horario fuera de servicio
+            document.getElementById("horario1").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+            document.getElementById("horario2").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+            
+        }
+    }
+
+    // Llamar a la función para verificar el horario al cargar la página
+    verificarHorario();
 });
-

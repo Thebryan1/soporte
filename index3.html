@@ -18,23 +18,59 @@
         </div>
     </header>
     <main>
-        <section id="link2">
+        <section id="link1">
             <h2>Soporte SIGA</h2>
             <p>Selecciona una opción del menú de navegación para ver la información correspondiente.</p>
         </section>
-        <section id="qr">
-            <h2>El gran Gille</h2>
+        <section id="qr3" class="header">
+            <h2>El gran Guille</h2>
+            <p>Contacto: <a id="llamar3" href="tel:+51958380192">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp3" href="https://wa.me/958380192">Mensaje</a></p>
+            <p id="horario3"></p>
             <img src="gille.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        <section id="qr4" class="header">
             <h2>El gran Rodo</h2>
+            <p>Contacto: <a  id="llamar4" href="tel:+51974358234">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp4" href="https://wa.me/974358234">Mensaje</a></p>
+            <p id="horario4"></p>
             <img src="rodo.jpg" alt="Código QR">
         </section>
-        <section id="qr">
+        <section id="qr5" class="header">
             <h2>El gran Gianfranco</h2>
+            <p>Contacto: <a id="llamar5" href="tel:+51955579770">Llamar</a></p>
+            <p>WhatsApp: <a id="whatsapp5" href="https://wa.me/955579770">Mensaje</a></p>
+            <p id="horario5"></p>
             <img src="gian.jpg" alt="Código QR">
         </section>
     </main>
-    <script src="script.js"></script> <!-- Importa el script de JavaScript -->
+    <script src="script.js"></script> 
+    <script src="script2.js"></script> <!-- Importa el script de JavaScript -->
+    <script>
+        
+        
+            // Verificar si el horario está habilitado y deshabilitar los enlaces si es necesario
+            function verificarHorario() {
+                var horaActual = new Date().getHours();
+                // Establecer el horario de atención (ejemplo: de 9:00 a 20:00)
+                if (horaActual < 9 || horaActual >= 20) {
+                    // Deshabilitar los enlaces para llamar y enviar mensajes de WhatsApp
+                    document.getElementById("llamar3").removeAttribute("href");
+                    document.getElementById("whatsapp3").removeAttribute("href");
+                    document.getElementById("llamar4").removeAttribute("href");
+                    document.getElementById("whatsapp4").removeAttribute("href");
+                    document.getElementById("llamar5").removeAttribute("href");
+                    document.getElementById("whatsapp5").removeAttribute("href");
+                    // Mostrar un mensaje de horario fuera de servicio
+                    document.getElementById("horario3").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario4").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                    document.getElementById("horario5").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
+                }
+            }
+        
+            // Llamar a la función para verificar el horario al cargar la página
+            verificarHorario();
+      
+        </script>
 </body>
 </html>

@@ -12,7 +12,6 @@ body {
     text-align: center;
     position: relative;
 }
-
 .header::before {
     content: "";
     position: absolute;
@@ -23,14 +22,12 @@ body {
     background-image: url("sopt.jpg"), url("2.jpg"), url("3.jpg");
     background-size: cover;
     background-position: center;
-    animation: carousel 30s infinite linear;
     z-index: -1; /* Ajustamos el índice z para que las imágenes estén detrás del contenido */
 }
 
-@keyframes carousel {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); } /* Desplazamos el 300% del ancho para crear el efecto de carrusel */
-}
+
+
+
 
 .button-container {
     position: relative; /* Establecemos la posición relativa para los botones */
@@ -98,7 +95,62 @@ section h2 {
  
 }
 
-#qr img {
+#qr1 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr2 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr3 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr4 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr5 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr6 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr7 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr8 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr9 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr10 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr11 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#qr12 img {
     display: block;
     margin: 0 auto;
     max-width: 200px;
