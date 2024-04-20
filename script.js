@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var headers = document.querySelectorAll(".header");
     var images = ["sopt.jpg", "2.jpg", "3.jpg"]; // Lista de imágenes disponibles
 
@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Cambiar el fondo del encabezado de cada sección cada 5 segundos
-    headers.forEach(function(header) {
-        setInterval(function() {
+    headers.forEach(function (header) {
+        setInterval(function () {
             nextBackground(header);
         }, 5000); // Cambia la imagen cada 5 segundos
     });
@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("llamar2").removeAttribute("href");
             document.getElementById("whatsapp1").removeAttribute("href");
             document.getElementById("whatsapp2").removeAttribute("href");
-           
+
             // Mostrar un mensaje de horario fuera de servicio
             document.getElementById("horario1").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
             document.getElementById("horario2").textContent = "Horario fuera de servicio. Por favor, contáctenos durante nuestro horario de atención.";
-            
+
         }
     }
 

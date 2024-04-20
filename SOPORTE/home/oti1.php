@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina de Tecnologías de la Información</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .titulo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .seccion {
+            margin-bottom: 20px;
+        }
+
+        .subtitulo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .descripcion {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+
+
+
+    <style>
+        .boton-redireccionamiento {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .boton-redireccionamiento:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <a href="../index.php" class="boton-redireccionamiento">Atrás</a><br>
+        <br>
+
+
+        <h1 class="titulo">Bienvenido a la Oficina de Tecnologías de la Información</h1>
+
+        <div class="seccion">
+            <h2 class="subtitulo">Misión</h2>
+            <p class="descripcion">Gestionar de manera eficiente y eficaz los recursos tecnológicos de la Municipalidad Distrital de San Jerónimo, a fin de apoyar el cumplimiento de sus objetivos estratégicos y brindar un servicio de calidad a las diferentes oficinas pertenecientes a la Municipalidad.</p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="subtitulo">Visión</h2>
+            <p class="descripcion">Ser una oficina líder en la gestión de tecnologías de la información, reconocida por su eficiencia e innovación, y que contribuya al desarrollo sostenible de la Municipalidad de San Jerónimo.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
